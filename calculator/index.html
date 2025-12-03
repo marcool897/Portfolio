@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+            background: #f2f2f2;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 260px;
+            height: 40px;
+            font-size: 22px;
+            text-align: right;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            resize: none;
+            background: #ffffff;
+
+        }
+
+        button {
+            width: 60px;
+            height: 50px;
+            font-size: 20px;
+            margin: 4px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #bdb0b0;
+        }
+
+        #btnClear {
+            width: 260px;
+            background-color: #ff4d4d;
+        }
+
+        #btnEqual {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #btnPlus,
+        #btnMinus,
+        #btnMultiply,
+        #btnDivide {
+            background-color: #07b3f8;
+        }
+    </style>
+
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <h1>Simple Calculator</h1>
+    <textarea name="display" id="disp"></textarea>
+    <br>
+    <textarea name="tempresult" id="tempresult"></textarea>
+    <br>
+    <button onclick="array.push('1'); disp.value = array.join('')" id="btn1">1</button>
+    <button onclick="array.push('2'); disp.value = array.join('')" id="btn2">2</button>
+    <button onclick="array.push('3'); disp.value = array.join('')" id="btn3">3</button>
+    <button onclick="array.push('+'); disp.value = array.join('')" id="btnPlus">+</button>
+    <br>
+    <button onclick="array.push('4'); disp.value = array.join('')" id="btn4">4</button>
+    <button onclick="array.push('5'); disp.value = array.join('')" id="btn5">5</button>
+    <button onclick="array.push('6'); disp.value = array.join('')" id="btn6">6</button>
+    <button onclick="array.push('-'); disp.value = array.join('')" id="btnMinus">-</button>
+    <br>
+    <button onclick="array.push('7'); disp.value = array.join('')" id="btn7">7</button>
+    <button onclick="array.push('8'); disp.value = array.join('')" id="btn8">8</button>
+    <button onclick="array.push('9'); disp.value = array.join('')" id="btn9">9</button>
+    <button onclick="array.push('*'); disp.value = array.join('')" id="btnMultiply">*</button>
+    <br>
+    <button onclick="array.push('0'); disp.value = array.join('')" id="btn0">0</button>
+    <button onclick="array.push('.'); disp.value = array.join('')" id="btnDot">.</button>
+    <button onclick="calculate(array)" id="btnEqual">=</button>
+    <button onclick="array.push('/'); disp.value = array.join('')" id="btnDivide">/</button>
+    <br>
+    <button onclick="array = []; disp.value = '' ;tempresult.value=''" id="btnClear">Clear</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
